@@ -77,6 +77,10 @@ def draw_circles_on_bounding_boxes(image_path, predictions):
 
             image = cv2.circle(image, (cx, cy), 15, (255, 0, 0), 2)
 
+            #Du kan se bildet som musen beves etter hvis du legger til denne koden
+            # cv2.imshow("Bounding Boxes", image)
+            # cv2.waitKey(0)
+
 def movemousespray(x_list, y_list):
     for x, y in zip(x_list, y_list):
         angle = math.radians(random.randint(0, 360)) # generate a random angle in radians

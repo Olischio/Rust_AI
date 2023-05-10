@@ -4,19 +4,23 @@ Du trenger en Roboflow API key for å kjøre denne koden, roboflow API keyen må
 
 Dette Github Repositoriet viser Utviklingsprosessen for å lage en AI for Rust
 
-Du trenger også:
+
+
+## Install packages
 
 ```bash
-# For å kjøre siste versjon av programmet må du pip installe disse modulene
+# Først lag ett nytt virtual environment og så:
+## Install dependencies from requirements.txt
+# Du må stå i mappen hvor requirements.txt ligger
+pip install -r requirements.txt
 
-import os
-import numpy as np
-from PIL import ImageGrab as imagegrab
-import pyautogui as gui
-import time
-from roboflow import Roboflow
-import random
-import math
-import random
-import time
+```
+ 
+## Create requirements.txt from a virtual environment
+ 
+Dersom du legger til nye dependencies så kan du trenge å regenerere requirements.txt
+
+```bash
+# Du må stå i mappen hvor requirements.txt skal ligge når du kjører denne
+pip freeze > requirements.txt
 ```

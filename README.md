@@ -6,7 +6,7 @@ Dagen etter gjorde jeg slik at de aktuelle filene ha X i navnet sitt for å lage
 
 ## Hva er målet
 Programmet er utvikling av Computer vision for å prøve å lage en "Cheat" for spillet Rust, ikke bekymre deg programmet er både for tregt og for dårlig for at det skulle blitt ett problem.
-Dette er fordi programmet har: Datasett med for lite innhold til å bli ekstremt bra og  programmet behøver get request for JSON data, til den tid musen ville bevegd seg ville fienden vert langt unna.
+Dette er fordi programmet har: Datasett med for lite innhold til å bli ekstremt bra og  programmet behøver get request for JSON data, til den tid musen ville bevegd seg ville fienden vært langt unna.
 
 ## Hvordan fungerer programmet
 Programmet bruker ett egenlagd Datasett fra Roboflow med rundt 600 bilder med annoteringer. Dette datasettet blir kalt på med Roboflow sitt api som deretter returnerer JSON, dette blir håndtert i programmet og satt i lister med X og Y koordinater slik at cv2 og PyAutoGUI libraries til å tegne bounding boxes og ett midpunkt blir funnet for å flytte musen og skyte denne personen.
